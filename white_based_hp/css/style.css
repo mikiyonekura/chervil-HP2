@@ -314,7 +314,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 .btn1 a {
 	display: block;
 	text-decoration: none;
-	border: 1px solid #fff;		/*枠線の幅、線種、色*/
+	border-top: 1px solid #fff;		/*枠線の幅、線種、色*/
 	text-align: center;			/*テキストをセンタリング*/
 	padding: 10px 30px;			/*上下、左右へのボタン内の余白*/
 	margin: 40px auto 0;		/*上、左右、下へのボックスの外側への余白*/
@@ -340,7 +340,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	flex-direction: column;			/*中のブロックを並べる向きの指定。これは縦に並べる意味。*/
 	width: 32%;						/*ブロック幅*/
 	margin-bottom: 20px;			/*ブロックの下に空ける余白*/
-	background: #000;				/*背景色*/
+	background: #000000;				/*背景色*/
 	color: #fff;					/*文字色*/
 	border-radius: 5px;				/*角丸の指定。ほんの少し角が丸くなります。*/
 	overflow: hidden;				/*角丸から内容が飛び出ないよう、飛び出た部分を非表示にする指定*/
@@ -357,6 +357,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 /*ボックス内のp（段落）タグ*/
 #contents .list-column p {
 	padding: 0;		/*余白のリセット*/
+	font-size: 80%;
 }
 
 /*「class="text"」を指定したブロック。テキストブロック。*/
@@ -769,6 +770,7 @@ body {
 /*ボックス内のボタン（共通）*/
 .btn1 a {
 	padding: 5px 10px;			/*上下、左右へのボタン内の余白*/
+
 }
 
 /*テーブル（ta1）
@@ -792,3 +794,9 @@ body {
 .pc {display:none;}
 
 }
+
+iframe[src$=".pdf"]{
+    width:100%;
+    height:100vh;
+}
+
