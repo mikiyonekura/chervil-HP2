@@ -800,3 +800,12 @@ iframe[src$=".pdf"]{
     height:100vh;
 }
 
+.parking{
+	display: block;
+	margin: 20px;
+}
+
+.map{
+	border: 2px #080101c0;
+
+}
