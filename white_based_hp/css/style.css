@@ -93,7 +93,7 @@ header #logo {
 /*メニュー１個あたりの設定*/
 #menubar ul li {
 	float: left;	/*左に回り込み*/
-	width: 20%;		/*幅。今回は５個なので、100÷5=20。*/
+	width: 33%;		/*幅。今回は５個なので、100÷5=20。*/
 	font-size: 20px;	/*文字サイズ*/
 }
 #menubar ul li a {
@@ -314,6 +314,8 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 /*ボックス内のボタン（共通）*/
 .btn1 a {
 	display: block;
+	line-height: 30px;
+	height: 30px;
 	text-decoration: none;
 	border-top: 1px solid #fff;		/*枠線の幅、線種、色*/
 	text-align: center;			/*テキストをセンタリング*/
@@ -390,7 +392,7 @@ footer .pr {display: block;font-size: 80%;}
 #footermenu {
 	overflow: hidden;
 	padding: 50px 0;	/*上下、左右へのボックス内の余白*/
-	background: url(../images/footer_logo.png) no-repeat right center / 20%;	/*背景画像の読み込み。*/
+	
 }
 /*リンクテキスト*/
 #footermenu li a {
@@ -404,9 +406,9 @@ footer .pr {display: block;font-size: 80%;}
 /*１行分の設定*/
 #footermenu ul {
 	float: left;	/*左に回り込み*/
-	width: 18%;		/*幅*/
+	width: 21%;		/*幅*/
 	padding-right: 1%;
-	padding-left: 1%;
+	padding-left: 3%;
 	text-align: left;
 }
 /*見出し*/
@@ -426,19 +428,11 @@ footer .pr {display: block;font-size: 80%;}
 
 /*facebookやtwitterなどのアイコン
 ---------------------------------------------------------------------------*/
-/*アイコン全体を囲むブロック*/
-ul.icon {
-	margin-bottom: 20px;
-}
-/*アイコン１個あたりの設定*/
-ul.icon li {
-	display: inline-block;	/*横並びにさせる指定*/
-}
 /*アイコン画像の設定*/
-ul.icon img {
+#icon img {
 	width: 30px;		/*画像の幅*/
 }
-ul.icon img:hover {
+#icon img:hover {
 	opacity: 0.8;
 }
 
